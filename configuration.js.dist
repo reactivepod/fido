@@ -1,0 +1,8 @@
+module.exports = [
+  {
+    name: 'The name of the podcast',
+    podcastId: 'the numeric iTunes id of the podcast',
+    countries: ['us', 'de', 'gb', 'se', 'ca', 'at', 'au', 'se', 'nl', 'br', 'mx', 'ru', 'gr', 'ar', 'za', 'ch', 'pt']
+  }
+];
+

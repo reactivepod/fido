@@ -1,0 +1,19 @@
+{
+  "name": "itunes-podcast-reviews-cli",
+  "version": "0.0.1",
+  "description": "Search iTunes for reviews for one or more podcasts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henning Glatter-Gotz",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.2",
+    "cli-color": "^1.0.0",
+    "dateformat": "^1.0.11",
+    "interpolate": "^0.1.0",
+    "request": "^2.61.0",
+    "xml2js": "^0.4.11"
+  }
+}
