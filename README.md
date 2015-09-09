@@ -1,10 +1,10 @@
-# iTunes-Podcast-Reviews
+# Fido
 
 Fetch reviews for one or more podcasts from a list of countries on the command line.
 
 ## Installation
 
-   git clone git@github.com:reactivepod/itunes-podcast-reviews-cli.git
+   git clone git@github.com:reactivepod/fido.git
    npm install
 
 Git for now, until npm rolls out orgs.

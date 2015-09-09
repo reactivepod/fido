@@ -1,5 +1,5 @@
 {
-  "name": "itunes-podcast-reviews-cli",
+  "name": "fido",
   "version": "0.0.1",
   "description": "Search iTunes for reviews for one or more podcasts",
   "main": "index.js",
