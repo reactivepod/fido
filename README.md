@@ -5,11 +5,8 @@ Fetch reviews for one or more podcasts from a list of countries on the command l
 ## Installation
 
 ```
-git clone git@github.com:reactivepod/fido.git
-npm install
+npm install -g @reactive/fido
 ```
-
-Git for now, until npm rolls out orgs.
 
 ## Configuration
 
@@ -33,7 +30,7 @@ module.exports = [
 ## Usage
 
 ```
-node index.js
+fido
 ```
 
 # License
