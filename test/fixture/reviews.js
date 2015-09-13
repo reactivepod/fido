@@ -1,0 +1,36 @@
+module.exports = {
+  de: [{
+    updated: '2015-08-20T07:42:00-07:00',
+    id: '1245973861',
+    title: 'Great podcast with great people',
+    content: [ { label: 'I have thoroughly enjoyed listening to the podcast, it feels like being part of a great group of friends who are all chatting about things that I like.\n\nIt’s a really nice way to pass an hour or so, and I wish them every success in the future and hope to hear more of them. :)',
+    attributes: { type: 'text' } },
+  { label: '<table border="0" width="100%">\n    <tr>\n        <td>\n            <table border="0" width="100%" cellspacing="0" cellpadding="0">\n                <tr valign="top" align="left">\n                    \n                    \n                    \t<td width="100%">\n                    \n                        <b><a href="https://itunes.apple.com/gb/podcast/reactive/id1020286000?mt=2&uo=2">Great podcast with great people</a></b><br/>\n                        \n                        \n                        \n                        \n\n                        \n\n                       <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular">\n\t\t\t\t\t\t\n                        </font>\n                    </td>\n                </tr>\n            </table>\n        </td>\n    </tr>\n    <tr>\n        <td>\n            \n                <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular"><br/>I have thoroughly enjoyed listening to the podcast, it feels like being part of a great group of friends who are all chatting about things that I like.<br/><br/>It’s a really nice way to pass an hour or so, and I wish them every success in the future and hope to hear more of them. :)</font><br/>\n            \n            \n            \n        </td>\n    </tr>\n</table>\n',
+    attributes: { type: 'html' } } ],
+    'im:contentType': 'review',
+    'im:voteSum': '0',
+    'im:voteCount': '0',
+    'im:rating': '5',
+    author: {
+      name: 'Lewis Cowper',
+      uri: 'https://itunes.apple.com/gb/reviews/id269374173',
+    },
+  }],
+  en: [{
+    updated: '2015-08-20T07:42:00-07:00',
+    id: '1245973862',
+    title: 'Great podcast with great people',
+    content: [ { label: 'I have thoroughly enjoyed listening to the podcast, it feels like being part of a great group of friends who are all chatting about things that I like.\n\nIt’s a really nice way to pass an hour or so, and I wish them every success in the future and hope to hear more of them. :)',
+    attributes: { type: 'text' } },
+  { label: '<table border="0" width="100%">\n    <tr>\n        <td>\n            <table border="0" width="100%" cellspacing="0" cellpadding="0">\n                <tr valign="top" align="left">\n                    \n                    \n                    \t<td width="100%">\n                    \n                        <b><a href="https://itunes.apple.com/gb/podcast/reactive/id1020286000?mt=2&uo=2">Great podcast with great people</a></b><br/>\n                        \n                        \n                        \n                        \n\n                        \n\n                       <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular">\n\t\t\t\t\t\t\n                        </font>\n                    </td>\n                </tr>\n            </table>\n        </td>\n    </tr>\n    <tr>\n        <td>\n            \n                <font size="2" face="Helvetica,Arial,Geneva,Swiss,SunSans-Regular"><br/>I have thoroughly enjoyed listening to the podcast, it feels like being part of a great group of friends who are all chatting about things that I like.<br/><br/>It’s a really nice way to pass an hour or so, and I wish them every success in the future and hope to hear more of them. :)</font><br/>\n            \n            \n            \n        </td>\n    </tr>\n</table>\n',
+    attributes: { type: 'html' } } ],
+    'im:contentType': 'review',
+    'im:voteSum': '0',
+    'im:voteCount': '0',
+    'im:rating': '5',
+    author: {
+      name: 'Ding dong',
+      uri: 'https://itunes.apple.com/gb/reviews/id269374173',
+    },
+  }],
+};
