@@ -24,5 +24,9 @@
     "interpolate": "^0.1.0",
     "request": "^2.61.0",
     "xml2js": "^0.4.11"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.1",
+    "eslint": "^1.4.1"
   }
 }
