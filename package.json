@@ -4,7 +4,7 @@
   "description": "Search iTunes for reviews for one or more podcasts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tap test/*.js",
     "lint": "eslint lib bin index.js"
   },
   "author": "Henning Glatter-Gotz",
@@ -23,13 +23,13 @@
     "chalk": "^1.1.1",
     "commander": "^2.8.1",
     "dateformat": "^1.0.11",
-    "interpolate": "^0.1.0",
     "request": "^2.61.0",
     "xml2js": "^0.4.11"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.1",
     "eslint": "^1.4.1",
-    "eslint-config-airbnb": "0.0.8"
+    "eslint-config-airbnb": "0.0.8",
+    "tap": "^1.4.1"
   }
 }
