@@ -2,16 +2,13 @@
 require('babel/register');
 
 const Yam = require('yam');
-const pathHelper = require('../lib/util/pathHelper');
-const getCurrentPath = pathHelper.getCurrentPath;
-const getUserHomeDirectory = pathHelper.getUserHomeDirectory;
+const fido = require('../');
+var cfg = []; // eslint-disable-line
 
 const config = new Yam('fido', {
-  primary: getUserHomeDirectory(),
-  secondary: getCurrentPath(),
+  primary: require('user-home'),
+  secondary: process.cwd(),
 });
-
-const fido = require('../');
 
 const argv = require('yargs')
   .usage('Usage: fido')
@@ -40,8 +37,6 @@ const argv = require('yargs')
   .help('h')
   .alias('h', 'help')
   .argv;
-
-var cfg = [];
 
 if (typeof argv.id !== 'undefined') {
   cfg.push({
