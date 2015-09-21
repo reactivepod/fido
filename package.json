@@ -21,6 +21,7 @@
     "async": "^1.4.2",
     "babel": "^5.8.23",
     "chalk": "^1.1.1",
+    "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
     "request": "^2.61.0",
     "xml2js": "^0.4.11",
