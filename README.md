@@ -14,7 +14,7 @@ A default configuration is present in ./.fido. The file is in json format.
 To override the configuration it is suggested to create a file with the same syntax in
 ~/.fido.
 
-```json
+```javascript
 {
   'podcasts': [
     {
