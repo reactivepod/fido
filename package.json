@@ -1,6 +1,6 @@
 {
   "name": "@reactive/fido",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search iTunes for reviews for one or more podcasts",
   "main": "index.js",
   "scripts": {
