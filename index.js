@@ -1,3 +1,5 @@
+require('babel/register');
+
 const getReviews = require('./lib/getReviews');
 const format = require('./lib/format');
 const chalk = require('chalk');
