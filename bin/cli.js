@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-require('babel/register');
+import Yam from 'yam';
+import fido from '../';
+import chrono from 'chrono-node';
 
-const Yam = require('yam');
-const fido = require('../');
-const chrono = require('chrono-node');
 var cfg = []; // eslint-disable-line
 var fromDate = null; // eslint-disable-line
 
