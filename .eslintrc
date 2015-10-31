@@ -3,6 +3,7 @@
   "rules": {
     "vars-on-top": 0,
     "no-console": 0,
-    "no-loop-func": 0
+    "no-loop-func": 0,
+    "id-length": 0
   }
 }

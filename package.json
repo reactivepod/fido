@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "tap test/*.js",
-    "lint": "eslint lib bin index.js"
+    "lint": "eslint lib bin index.js",
+    "fido": "node bin/bootstrap.js"
   },
   "author": "Henning Glatter-Gotz",
   "repository": {
@@ -14,12 +15,13 @@
   },
   "preferGlobal": true,
   "bin": {
-    "fido": "./bin/cli.js"
+    "fido": "./bin/bootstrap.js"
   },
   "license": "MIT",
   "dependencies": {
     "async": "^1.4.2",
-    "babel": "^6.0.12",
+    "babel-core": "^6.0.12",
+    "babel-preset-es2015": "^6.0.12",
     "chalk": "^1.1.1",
     "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
