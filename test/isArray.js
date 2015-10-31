@@ -1,7 +1,7 @@
 require('babel-core/register');
 
 const tap = require('tap');
-const isArray = require('../lib/util/isArray');
+const isArray = require('lodash.isarray');
 
 tap.test('isArray', function cb(t) {
   t.plan(1);
