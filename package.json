@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "^1.4.2",
-    "babel-core": "^6.0.12",
+    "babel": "^6.0.14",
     "chalk": "^1.1.1",
     "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
