@@ -1,6 +1,6 @@
-const getReviews = require('./lib/getReviews');
-const format = require('./lib/format');
-const chalk = require('chalk');
+import getReviews from './util/getReviews';
+import format from './util/format';
+import chalk from 'chalk';
 
 function fido(config, page = 1, fromDate = null) {
   config.forEach((cfg) => {

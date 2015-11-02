@@ -1,5 +1,3 @@
-require('babel-core/register');
-
 const tap = require('tap');
 const isArray = require('lodash.isarray');
 
