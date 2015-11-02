@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import Yam from 'yam';
 import fido from '../';
 import chrono from 'chrono-node';
