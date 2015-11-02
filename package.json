@@ -43,6 +43,7 @@
     "chokidar-cli": "^1.1.1",
     "eslint": "^1.8.0",
     "eslint-config-airbnb": "0.1.0",
+    "npm-run-all": "^1.2.12",
     "tap": "^2.2.0",
     "trash": "^3.1.2",
     "user-home": "^2.0.0"
