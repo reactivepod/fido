@@ -22,28 +22,27 @@ function isNewer(fromDate) {
 function format(data, fromDate = null) {
   let formatted = '';
 
-  for (const country in data) {
-    if ({}.hasOwnProperty.call(data, country)) {
-      let reviews = [];
+  for (const country of Object.keys(data)) {
+    let reviews = [];
 
-      if (fromDate !== null) {
-        reviews = data[country].filter(isNewer(fromDate));
-      } else {
-        reviews = data[country];
-      }
+    if (fromDate !== null) {
+      reviews = data[country][0].filter(isNewer(fromDate));
+    } else {
+      reviews = data[country][0];
+    }
 
-      reviews.forEach((review) => {
-        const tReview = {
-          store: chalk.bold.black(country.toUpperCase()),
-          author: chalk.bold.red(review.author.name),
-          title: chalk.bold.black(review.title),
-          rating: chalk.bold.black(review['im:rating']),
-          date: chalk.bold.black(dateformat(review.updated, 'yyyy-mm-dd HH:MM:ss')),
-          content: getContent(review.content)[0],
-        };
 
-        formatted += formatData(tReview);
-      });
+    for (const review of reviews) {
+      const tReview = {
+        store: chalk.bold.black(country.toUpperCase()),
+        author: chalk.bold.red(review.author.name),
+        title: chalk.bold.black(review.title),
+        rating: chalk.bold.black(review['im:rating']),
+        date: chalk.bold.black(dateformat(review.updated, 'yyyy-mm-dd HH:MM:ss')),
+        content: getContent(review.content)[0],
+      };
+
+      formatted += formatData(tReview);
     }
   }
 
@@ -54,4 +53,4 @@ function format(data, fromDate = null) {
   return formatted;
 }
 
-module.exports = format;
+export default format;
