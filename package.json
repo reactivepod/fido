@@ -38,7 +38,7 @@
     "yargs": "^3.25.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.0.15",
+    "babel-cli": "^6.1.2",
     "babel-eslint": "^4.1.1",
     "babel-preset-es2015": "^6.0.12",
     "chokidar-cli": "^1.1.1",
