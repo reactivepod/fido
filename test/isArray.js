@@ -1,8 +1,6 @@
-const tap = require('tap');
+import test from 'ava';
 
-tap.test('isArray', function cb(t) {
-  t.plan(1);
-  t.equal(Array.isArray({}), false);
-  // call t.end() when you're done
+test('foo', t => {
+  t.pass();
   t.end();
 });
