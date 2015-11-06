@@ -3,16 +3,14 @@ import format from './util/format';
 import chalk from 'chalk';
 
 async function fido(config, page = 1, fromDate = null) {
-
   for (const cfg of config) {
     console.log(`fetching reviews for ${cfg.name}...\n`);
-
     try {
       const data = await getReviews(cfg.countries, page, cfg.podcastId);
       console.log(chalk.bold.black(`** ${cfg.name} **`));
       console.log(format(data, fromDate));
     } catch (e) {
-      console.log(e);
+      console.error(`Feed data for ** ${cfg.name} ** could not be loaded\n`);
     }
   }
 }
