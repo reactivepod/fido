@@ -7,14 +7,13 @@ function formatData(data) {
 
 function getContent(content) {
   return content
-    .filter((item) => item.attributes.type === 'text')
-    .map((item) => item.label);
+    .filter(item => item.attributes.type === 'text')
+    .map(item => item.label);
 }
 
 function isNewer(fromDate) {
-  return (element) => {
+  return element => {
     const reviewDate = new Date(element.updated);
-
     return reviewDate >= fromDate;
   };
 }
@@ -30,7 +29,6 @@ function format(data, fromDate = null) {
     } else {
       reviews = data[country][0];
     }
-
 
     for (const review of reviews) {
       const tReview = {
