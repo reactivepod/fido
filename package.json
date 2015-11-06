@@ -38,7 +38,6 @@
   },
   "devDependencies": {
     "ava": "^0.3.0",
-    "babel-eslint": "^4.1.1",
     "babel": "^5.8.29",
     "babel-eslint": "^4.1.1",
     "babel-runtime": "^5.8.29",

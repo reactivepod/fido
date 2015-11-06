@@ -3,6 +3,7 @@ import format from './util/format';
 import chalk from 'chalk';
 
 async function fido(config, page = 1, fromDate = null) {
+
   for (const cfg of config) {
     console.log(`fetching reviews for ${cfg.name}...\n`);
 
