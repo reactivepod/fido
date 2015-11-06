@@ -12,7 +12,6 @@ async function fido(config, page = 1, fromDate = null) {
       console.log(chalk.bold.black(`** ${cfg.name} **`));
       console.log(format(data, fromDate));
     } catch (e) {
-      console.log(e);
     }
   }
 }

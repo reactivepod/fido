@@ -10,7 +10,7 @@ const parseOptions = {
 };
 
 function getResult(result) {
-  const reviews = result.feed.entry || [];
+  const reviews = (result.feed && result.feed.entry) ? result.feed.entry : [];
   if (reviews.length !== 0) {
     reviews.shift();
   }
@@ -25,7 +25,6 @@ function doGet(country, page, itemId) {
   const url = `https://itunes.apple.com/${country}/rss/customerreviews/page=${page}/id=${itemId}/sortBy=mostRecent/xml`;
 
   return fetch(url)
-    .catch(console.err)
     .then(result => result.text())
     .then(getXMLresult)
     .then(getResult);
@@ -45,8 +44,7 @@ function getReviews(countries, pageCount, itemId) {
   const requests = {};
 
   countriesArr.forEach(country => {
-    const filled = requests[country] = getByCountry(country, pageCount, itemId);
-    return filled;
+    requests[country] = getByCountry(country, pageCount, itemId);
   });
 
   return promiseProps(requests);
