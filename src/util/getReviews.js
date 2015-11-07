@@ -1,34 +1,34 @@
-import fetch from 'node-fetch';
-import { parseString as parseXmlString } from 'xml2js';
-import pify from 'pify';
+import fetch from 'isomorphic-fetch';
 import promiseProps from 'promise-props';
+import { getXMLresult, getResult} from './parseXML';
 
-const parseOptions = {
-  attrkey: 'attributes',
-  charkey: 'label',
-  explicitArray: false,
-};
 
-function getResult(result) {
-  const reviews = (result.feed && result.feed.entry) ? result.feed.entry : [];
-  if (reviews.length !== 0) {
-    reviews.shift();
+function checkStatus(response) {
+  const isReponseGood = response.status >= 200 && response.status < 300;
+
+  if (!isReponseGood) {
+    const error = new Error(response.statusText);
+    error.response = response;
+    throw error;
   }
-  return reviews;
+
+  return response;
 }
 
-function getXMLresult(result) {
-  return pify(parseXmlString)(result, parseOptions);
+function parseText(response) {
+  return response.text();
 }
 
 function doGet(country, page, itemId) {
   const url = `https://itunes.apple.com/${country}/rss/customerreviews/page=${page}/id=${itemId}/sortBy=mostRecent/xml`;
 
   return fetch(url)
-    .then(result => result.text())
+    .then(checkStatus)
+    .then(parseText)
     .then(getXMLresult)
     .then(getResult);
 }
+
 
 function getByCountry(country, pageCount, itemId) {
   const requests = Array.from(
