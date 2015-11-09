@@ -2,7 +2,6 @@ import fetch from 'isomorphic-fetch';
 import promiseProps from 'promise-props';
 import { getXMLresult, getResult} from './parseXML';
 
-
 function checkStatus(response) {
   const isReponseGood = response.status >= 200 && response.status < 300;
 
@@ -26,7 +25,8 @@ function doGet(country, page, itemId) {
     .then(checkStatus)
     .then(parseText)
     .then(getXMLresult)
-    .then(getResult);
+    .then(getResult)
+    .catch(() => []);
 }
 
 

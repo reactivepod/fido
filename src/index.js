@@ -10,7 +10,7 @@ async function fido(config, page = 1, fromDate = null) {
       console.log(chalk.bold.black(`** ${cfg.name} **`));
       console.log(format(data, fromDate));
     } catch (e) {
-      console.error(e);
+      console.error(`Feed data for ** ${cfg.name} ** could not be loaded\n`);
     }
   }
 }
