@@ -47,8 +47,12 @@ const argv = require('yargs')
     describe: 'Get the natural language relative date from the config file that represents the start time of the last podcast episode. The value should be under a top level key called last_episode_date. Example: Last Monday 5pm',
     type: 'boolean',
   })
+  .version(() => {
+    return require('../../package').version;
+  })
   .help('h')
   .alias('h', 'help')
+  .alias('v', 'version')
   .argv;
 
 if (typeof argv.id !== 'undefined') {
@@ -68,7 +72,7 @@ if (typeof argv.from !== 'undefined') {
 if (argv.last === true) {
   const lastEpiDate = config.get('last_episode_date');
 
-  if (typeof lastEpiDate !== undefined) {
+  if (typeof lastEpiDate !== 'undefined') {
     fromDate = chrono.parseDate(lastEpiDate);
   }
 }
