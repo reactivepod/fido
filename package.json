@@ -4,14 +4,13 @@
   "description": "Search iTunes for reviews for one or more podcasts",
   "main": "lib/index.js",
   "scripts": {
-    "tap": "tap test/*.js",
-    "test": "npm-run-all transpile tap",
+    "test": "ava",
     "lint": "eslint src",
     "run-cli": "node lib/bin/cli.js",
     "fido": "npm-run-all transpile run-cli",
     "babel": "babel src --out-dir lib",
     "transpile": "npm-run-all clean babel",
-    "clean": "trash lib",
+    "clean": "rimraf lib",
     "watch": "babel src --watch --out-dir lib",
     "prepublish": "npm run transpile"
   },
@@ -29,7 +28,7 @@
     "chalk": "^1.1.1",
     "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
-    "node-fetch": "^1.3.3",
+    "isomorphic-fetch": "^2.2.0",
     "pify": "^2.3.0",
     "promise-props": "^1.0.0",
     "user-home": "^2.0.0",
@@ -38,17 +37,16 @@
     "yargs": "^3.25.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.0.15",
+    "ava": "^0.3.0",
+    "babel": "^5.8.29",
     "babel-eslint": "^4.1.1",
-    "babel-preset-es2015": "^6.0.12",
-    "chokidar-cli": "^1.1.1",
-    "eslint": "^1.8.0",
+    "babel-runtime": "^5.8.29",
+    "eslint": "^1.9.0",
     "eslint-config-airbnb": "0.1.0",
     "npm-run-all": "^1.2.12",
-    "tap": "^2.2.0",
-    "trash-cli": "^1.1.0"
+    "rimraf": "^2.4.3"
   },
   "engines": {
-    "node": ">=4.1.2"
+    "node": ">=4.2"
   }
 }
