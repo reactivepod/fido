@@ -72,7 +72,7 @@ if (typeof argv.from !== 'undefined') {
 if (argv.last === true) {
   const lastEpiDate = config.get('last_episode_date');
 
-  if (typeof lastEpiDate !== undefined) {
+  if (typeof lastEpiDate !== 'undefined') {
     fromDate = chrono.parseDate(lastEpiDate);
   }
 }
