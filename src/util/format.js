@@ -18,7 +18,7 @@ function isNewer(fromDate) {
   };
 }
 
-function format(data, fromDate = null) {
+export default function format(data, fromDate = null) {
   let formatted = '';
 
   for (const country of Object.keys(data)) {
@@ -36,7 +36,7 @@ function format(data, fromDate = null) {
         author: chalk.bold.red(review.author.name),
         title: chalk.bold.black(review.title),
         rating: chalk.bold.black(review['im:rating']),
-        date: chalk.bold.black(dateformat(review.updated, 'yyyy-mm-dd HH:MM:ss')),
+        date: chalk.bold.black(dateformat(review.updated, 'yyyy-mm-dd HH:MM:ss', true)),
         content: getContent(review.content)[0],
       };
 
@@ -50,5 +50,3 @@ function format(data, fromDate = null) {
 
   return formatted;
 }
-
-export default format;

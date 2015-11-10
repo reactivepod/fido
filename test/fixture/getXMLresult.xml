@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<feed xmlns:im="http://itunes.apple.com/rss" xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+		<id>https://itunes.apple.com/us/rss/customerreviews/page=1/id=926224392/sortBy=mostRecent/xml</id><title>iTunes Store: Customer Reviews</title><updated>2015-11-10T01:37:08-07:00</updated><link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&amp;id=38"/><link rel="self" href="https://itunes.apple.com/us/rss/customerreviews/page=1/id=926224392/sortBy=mostRecent/xml"/><link rel="first" href="https://itunes.apple.com/us/rss/customerreviews/page=1/id=926224392/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=926224392/sortBy=mostRecent/xml"/><link rel="last" href="https://itunes.apple.com/us/rss/customerreviews/page=1/id=926224392/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=926224392/sortBy=mostRecent/xml"/><link rel="previous" href="https://itunes.apple.com/us/rss/customerreviews/page=1/id=926224392/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=926224392/sortBy=mostRecent/xml"/><link rel="next" href="https://itunes.apple.com/us/rss/customerreviews/page=2/id=926224392/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=926224392/sortBy=mostRecent/xml"/><icon>http://itunes.apple.com/favicon.ico</icon><author><name>iTunes Store</name><uri>http://www.apple.com/itunes/</uri></author><rights>Copyright 2008 Apple Inc.</rights>
+		
+			<entry>
+				<updated>2015-11-10T01:37:08-07:00</updated>
+				
+					<id im:id="926224392">https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2</id>
+				
+					<title>DESCRIPTIVE - Kahlil Lechelt</title>
+				
+					<summary>DESCRIPTIVE is a weekly technical interview podcast with people from the JavaScript and web development world.</summary>
+				
+					<im:name>DESCRIPTIVE</im:name>
+				
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2"/>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<category im:id="1480" term="Software How-To" scheme="https://itunes.apple.com/us/genre/podcasts-technology-software/id1480?mt=2&amp;uo=2" label="Software How-To"/>
+				
+					<im:artist>Kahlil Lechelt</im:artist>
+				
+					<im:price amount="0" currency="USD">Get</im:price>
+				
+					<im:image height="55">http://is2.mzstatic.com/image/thumb/Podcasts5/v4/7a/a5/b8/7aa5b8fe-1a1c-e94d-0b1c-23ed586aa743/mza_2596518888637469020.jpg/55x55bb-85.jpg</im:image>
+				
+					<im:image height="60">http://is3.mzstatic.com/image/thumb/Podcasts5/v4/7a/a5/b8/7aa5b8fe-1a1c-e94d-0b1c-23ed586aa743/mza_2596518888637469020.jpg/60x60bb-85.jpg</im:image>
+				
+					<im:image height="170">http://is2.mzstatic.com/image/thumb/Podcasts5/v4/7a/a5/b8/7aa5b8fe-1a1c-e94d-0b1c-23ed586aa743/mza_2596518888637469020.jpg/170x170bb-85.jpg</im:image>
+				
+					<im:releaseDate label="November 4, 2015">2015-11-04T06:37:00-07:00</im:releaseDate>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Kahlil Lechelt - DESCRIPTIVE  artwork&quot; src=&quot;http://is2.mzstatic.com/image/thumb/Podcasts5/v4/7a/a5/b8/7aa5b8fe-1a1c-e94d-0b1c-23ed586aa743/mza_2596518888637469020.jpg/170x170bb-85.jpg&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+                    
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2&quot;&gt;DESCRIPTIVE&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        Kahlil Lechelt
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+						 	&lt;br/&gt;
+                            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/podcasts-technology-software/id1480?mt=2&amp;uo=2&quot;&gt;Software How-To&lt;/a&gt;
+                        
+						 	&lt;br/&gt;
+                            &lt;b&gt;Release Date:&lt;/b&gt; November 4, 2015
+                        
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;DESCRIPTIVE is a weekly technical interview podcast with people from the JavaScript and web development world.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2015-03-23T12:40:00-07:00</updated>
+				
+					<id>1172346850</id>
+				
+					<title>Great listen!</title>
+				
+					<content type="text">I really enjoy hearing the backstories of the different guests and how they came into programming.</content>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<im:voteSum>1</im:voteSum>
+				
+					<im:voteCount>1</im:voteCount>
+				
+					<im:rating>5</im:rating>
+				
+					<author><name>timbot29</name><uri>https://itunes.apple.com/us/reviews/id272390540</uri></author>
+				
+					<link rel="related" href="https://itunes.apple.com/us/review?id=926224392&amp;type=Podcast"/>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                    
+                    	&lt;td width=&quot;100%&quot;&gt;
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2&quot;&gt;Great listen!&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;I really enjoy hearing the backstories of the different guests and how they came into programming.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2015-03-02T19:12:00-07:00</updated>
+				
+					<id>1162206151</id>
+				
+					<title>Interesting interview show</title>
+				
+					<content type="text">Kahlil has great guests on this show and I like that he asks about he history of the guests that shows how they got to where they are today.</content>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<im:voteSum>1</im:voteSum>
+				
+					<im:voteCount>1</im:voteCount>
+				
+					<im:rating>5</im:rating>
+				
+					<author><name>Jmenj</name><uri>https://itunes.apple.com/us/reviews/id31937392</uri></author>
+				
+					<link rel="related" href="https://itunes.apple.com/us/review?id=926224392&amp;type=Podcast"/>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                    
+                    	&lt;td width=&quot;100%&quot;&gt;
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2&quot;&gt;Interesting interview show&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Kahlil has great guests on this show and I like that he asks about he history of the guests that shows how they got to where they are today.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2015-02-06T01:06:00-07:00</updated>
+				
+					<id>1142452643</id>
+				
+					<title>Excellent show</title>
+				
+					<content type="text">Interesting guest and relaxed interviewing style. Not only about the tech that the people are involved in but also about the people and their background.</content>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<im:voteSum>1</im:voteSum>
+				
+					<im:voteCount>1</im:voteCount>
+				
+					<im:rating>5</im:rating>
+				
+					<author><name>Henning Glatter-Gotz</name><uri>https://itunes.apple.com/us/reviews/id28077389</uri></author>
+				
+					<link rel="related" href="https://itunes.apple.com/us/review?id=926224392&amp;type=Podcast"/>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                    
+                    	&lt;td width=&quot;100%&quot;&gt;
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2&quot;&gt;Excellent show&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Interesting guest and relaxed interviewing style. Not only about the tech that the people are involved in but also about the people and their background.&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+			<entry>
+				<updated>2014-10-07T01:43:00-07:00</updated>
+				
+					<id>1076505894</id>
+				
+					<title>Great show!</title>
+				
+					<content type="text">Looking forward to the next episodes!</content>
+				
+					<im:contentType term="Podcast" label="Podcast"/>
+				
+					<im:voteSum>1</im:voteSum>
+				
+					<im:voteCount>1</im:voteCount>
+				
+					<im:rating>5</im:rating>
+				
+					<author><name>Gregor M.</name><uri>https://itunes.apple.com/us/reviews/id43658151</uri></author>
+				
+					<link rel="related" href="https://itunes.apple.com/us/review?id=926224392&amp;type=Podcast"/>
+				
+				
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+                    
+                    
+                    	&lt;td width=&quot;100%&quot;&gt;
+                    
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/descriptive/id926224392?mt=2&amp;uo=2&quot;&gt;Great show!&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+                        
+                        
+                        
+                        
+
+                        
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+						
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Looking forward to the next episodes!&lt;/font&gt;&lt;br/&gt;
+            
+            
+            
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+				
+			</entry>
+		
+	</feed>

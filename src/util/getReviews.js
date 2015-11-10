@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import promiseProps from 'promise-props';
-import { getXMLresult, getResult} from './parseXML';
+import { getXMLresult, getResult } from './parseXML';
 
 function checkStatus(response) {
   const isReponseGood = response.status >= 200 && response.status < 300;
@@ -39,7 +39,7 @@ function getByCountry(country, pageCount, itemId) {
   return Promise.all(requests);
 }
 
-function getReviews(countries, pageCount, itemId) {
+export default function getReviews(countries, pageCount, itemId) {
   const countriesArr = Array.isArray(countries) ? countries : [countries];
   const requests = {};
 
@@ -49,5 +49,3 @@ function getReviews(countries, pageCount, itemId) {
 
   return promiseProps(requests);
 }
-
-export default getReviews;
