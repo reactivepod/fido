@@ -57,7 +57,7 @@ const argv = require('yargs')
 
 if (typeof argv.id !== 'undefined') {
   cfg.push({
-    id: argv.id,
+    podcastId: argv.id,
     name: argv.name,
     countries: argv.countries,
   });

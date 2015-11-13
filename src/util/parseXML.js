@@ -8,10 +8,7 @@ const parseOptions = {
 };
 
 export function getResult(result) {
-  const reviews = result.feed.entry || [];
-  if (reviews.length !== 0) {
-    reviews.shift();
-  }
+  const reviews = (result && result.feed && result.feed.entry && Array.isArray(result.feed.entry)) ? result.feed.entry.slice(1) : [];
   return reviews;
 }
 

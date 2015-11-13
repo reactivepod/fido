@@ -1,0 +1,12 @@
+Usage: fido
+
+Options:
+  -i, --id         The podcast id to query (single numeric value)
+  -n, --name       The name of the podcast to query  [string]
+  -c, --countries  The countries to query (space separated)  [array]
+  -p, --pages      The number of pages to fetch (page size is 50)
+  -f, --from       Natural language date from which point on reviews should be fetched  [string]
+  -l, --last       Get the natural language relative date from the config file that represents the start time of the last podcast episode. The value should be under a top level key called last_episode_date. Example: Last Monday 5pm  [boolean]
+  -h, --help       Show help  [boolean]
+  -v, --version    Show version number  [boolean]
+
