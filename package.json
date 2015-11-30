@@ -25,6 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "babel-runtime": "^5.8.29",
     "chalk": "^1.1.1",
     "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
@@ -41,7 +42,6 @@
     "babel": "^5.8.29",
     "babel-core": "^5.8.33",
     "babel-eslint": "^4.1.1",
-    "babel-runtime": "^5.8.29",
     "eslint": "^1.9.0",
     "eslint-config-airbnb": "1.0.2",
     "nock": "^3.3.1",
