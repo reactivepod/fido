@@ -5,6 +5,7 @@ import format from '../src/util/format';
 import getReviews from '../src/util/getReviews';
 import { readFileSync } from 'fs';
 import nock from 'nock';
+import { stripColor } from 'chalk';
 
 test('parseXML/getResult', t => {
   t.plan(4);
@@ -50,9 +51,8 @@ test('getReviews', t => {
 
 test('format', t => {
   const data = JSON.parse(readFileSync('./fixture/format.json', { encoding: 'utf8' }));
-  const output = format(data);
+  const output = stripColor(format(data));
   const fixture = readFileSync('./fixture/format.txt', { encoding: 'utf8' });
 
   t.same(output, fixture);
-  t.end();
 });
