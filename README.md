@@ -1,4 +1,4 @@
-# Fido
+# Fido [![Build Status](https://travis-ci.org/reactivepod/fido.svg)](https://travis-ci.org/reactivepod/fido)
 
 Fetch reviews for one or more podcasts from a list of countries on the command line.
 
