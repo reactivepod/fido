@@ -1,6 +1,5 @@
 {
   "name": "@reactive/fido",
-  "version": "1.2.4",
   "description": "Search iTunes for reviews for one or more podcasts",
   "main": "lib/index.js",
   "scripts": {
@@ -12,12 +11,13 @@
     "transpile": "npm-run-all clean babel",
     "clean": "rimraf lib",
     "watch": "babel src --watch --out-dir lib",
-    "prepublish": "npm run transpile"
+    "prepublish": "npm run transpile",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Henning Glatter-Gotz",
   "repository": {
     "type": "git",
-    "url": "git@github.com:reactivepod/fido.git"
+    "url": "https://github.com/reactivepod/fido.git"
   },
   "preferGlobal": true,
   "bin": {
@@ -46,7 +46,8 @@
     "eslint-config-airbnb": "1.0.2",
     "nock": "^3.3.1",
     "npm-run-all": "^1.2.12",
-    "rimraf": "^2.4.3"
+    "rimraf": "^2.4.3",
+    "semantic-release": "^4.3.5"
   },
   "engines": {
     "node": ">=4.2"
