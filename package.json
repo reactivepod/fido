@@ -42,6 +42,7 @@
     "babel": "^5.8.29",
     "babel-core": "^5.8.33",
     "babel-eslint": "^4.1.1",
+    "cz-conventional-changelog": "^1.1.4",
     "eslint": "^1.9.0",
     "eslint-config-airbnb": "1.0.2",
     "nock": "^3.3.1",
@@ -51,5 +52,10 @@
   },
   "engines": {
     "node": ">=4.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
