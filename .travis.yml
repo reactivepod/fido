@@ -19,5 +19,5 @@ after_success:
   - 'export $(cat .to_export_back) &> /dev/null'
   - npm run semantic-release
 branches:
-  only:
-    - master
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
