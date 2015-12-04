@@ -25,7 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "babel-runtime": "^5.8.29",
+    "babel-runtime": "^6.3.13",
     "chalk": "^1.1.1",
     "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
