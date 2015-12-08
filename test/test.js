@@ -1,7 +1,7 @@
 import test from 'ava';
 import 'babel/register';
 import { getResult, getXMLresult } from '../src/util/parseXML';
-import format from '../src/util/format';
+import { format, transform } from '../src/util/format';
 import getReviews from '../src/util/getReviews';
 import { readFileSync } from 'fs';
 import nock from 'nock';
@@ -51,7 +51,7 @@ test('getReviews', t => {
 
 test('format', t => {
   const data = JSON.parse(readFileSync('./fixture/format.json', { encoding: 'utf8' }));
-  const output = stripColor(format(data));
+  const output = stripColor(format(transform(data)));
   const fixture = readFileSync('./fixture/format.txt', { encoding: 'utf8' });
 
   t.same(output, fixture);

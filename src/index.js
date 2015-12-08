@@ -1,16 +1,24 @@
 import getReviews from './util/getReviews';
-import format from './util/format';
-import chalk from 'chalk';
+import { transform } from './util/format';
 
 export default async function fido(config, page = 1, fromDate = null) {
+  const output = {};
+
   for (const cfg of config) {
-    console.log(`fetching reviews for ${cfg.name}...\n`);
+    output[cfg.podcastId] = {
+      name: cfg.name,
+      fromDate,
+      id: cfg.podcastId,
+    };
+
     try {
-      const data = await getReviews(cfg.countries, page, cfg.podcastId);
-      console.log(chalk.bold.black(`** ${cfg.name} **`));
-      console.log(format(data, fromDate));
+      output[cfg.podcastId].data = await getReviews(cfg.countries, page, cfg.podcastId);
+      output[cfg.podcastId].reviews = transform(output[cfg.podcastId].data, fromDate);
     } catch (e) {
-      console.error(`Feed data for ** ${cfg.name} ** could not be loaded\n`);
+      output[cfg.podcastId].data = null;
+      output[cfg.podcastId].reviews = null;
     }
   }
+
+  return output;
 }

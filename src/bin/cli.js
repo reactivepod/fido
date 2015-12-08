@@ -3,6 +3,8 @@
 import Yam from 'yam';
 import fido from '../';
 import chrono from 'chrono-node';
+import { format } from '../util/format';
+import chalk from 'chalk';
 
 var cfg = []; // eslint-disable-line
 var fromDate = null; // eslint-disable-line
@@ -77,4 +79,9 @@ if (argv.last === true) {
   }
 }
 
-fido(cfg, argv.pages, fromDate);
+fido(cfg, argv.pages, fromDate).then(data => {
+  Object.keys(data).forEach(key => {
+    console.log(chalk.bold.black(`** ${data[key].name} **`));
+    console.log(format(data[key].reviews, data[key].fromDate));
+  });
+});

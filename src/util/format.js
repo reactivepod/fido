@@ -5,43 +5,64 @@ function formatData(data) {
   return `\n${data.store} / ${data.author} / ${data.title} / ${data.rating} / ${data.date}\n${data.content}\n`;
 }
 
-function getContent(content) {
+export function getContent(content) {
   return content
     .filter(item => item.attributes.type === 'text')
     .map(item => item.label);
 }
 
-function isNewer(fromDate) {
+export function isNewer(fromDate) {
   return element => {
     const reviewDate = new Date(element.updated);
     return reviewDate >= fromDate;
   };
 }
 
-export default function format(data, fromDate = null) {
-  let formatted = '';
+export function transform(data, fromDate = null) {
+  let reviews = [];
 
   for (const country of Object.keys(data)) {
-    let reviews = [];
+    let temp;
 
     if (fromDate !== null) {
-      reviews = data[country][0].filter(isNewer(fromDate));
+      temp = data[country][0].filter(isNewer(fromDate));
     } else {
-      reviews = data[country][0];
+      temp = data[country][0];
     }
 
-    for (const review of reviews) {
-      const tReview = {
-        store: chalk.bold.black(country.toUpperCase()),
-        author: chalk.bold.red(review.author.name),
-        title: chalk.bold.black(review.title),
-        rating: chalk.bold.black(review['im:rating']),
-        date: chalk.bold.black(dateformat(review.updated, 'yyyy-mm-dd HH:MM:ss', true)),
+    temp = temp.map(review => {
+      return {
+        country,
+        author: review.author,
+        title: review.title,
+        rating: review['im:rating'],
+        date: new Date(review.updated),
         content: getContent(review.content)[0],
       };
+    });
 
-      formatted += formatData(tReview);
+    if (temp.length) {
+      reviews = reviews.concat(temp);
     }
+  }
+
+  return reviews;
+}
+
+export function format(reviews, fromDate = null) {
+  let formatted = '';
+
+  for (const review of reviews) {
+    const tReview = {
+      store: chalk.bold.black(review.country.toUpperCase()),
+      author: chalk.bold.red(review.author.name),
+      title: chalk.bold.black(review.title),
+      rating: chalk.bold.black(review.rating),
+      date: chalk.bold.black(dateformat(review.date, 'yyyy-mm-dd HH:MM:ss', true)),
+      content: review.content,
+    };
+
+    formatted += formatData(tReview);
   }
 
   if (formatted === '') {
