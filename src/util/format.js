@@ -46,7 +46,7 @@ export function transform(data, fromDate = null) {
     }
   }
 
-  return reviews;
+  return reviews.sort((a, b) => b.date - a.date);
 }
 
 export function format(reviews, fromDate = null) {
