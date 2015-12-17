@@ -49,7 +49,7 @@ export function transform(data, fromDate = null) {
   return reviews.sort((a, b) => b.date - a.date);
 }
 
-export function format(reviews, fromDate = null) {
+export function format(reviews) {
   let formatted = '';
 
   for (const review of reviews) {

@@ -1,22 +1,11 @@
 import fetch from 'isomorphic-fetch';
 import promiseProps from 'promise-props';
-import { getXMLresult, getResult } from './parseXML';
-
-function checkStatus(response) {
-  const isReponseGood = response.status >= 200 && response.status < 300;
-
-  if (!isReponseGood) {
-    const error = new Error(response.statusText);
-    error.response = response;
-    throw error;
-  }
-
-  return response;
-}
-
-function parseText(response) {
-  return response.text();
-}
+import {
+  getXMLresult,
+  getResult,
+  checkStatus,
+  parseText,
+} from './parseXML';
 
 function doGet(country, page, itemId) {
   const url = `https://itunes.apple.com/${country}/rss/customerreviews/page=${page}/id=${itemId}/sortBy=mostRecent/xml`;
