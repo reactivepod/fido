@@ -6,8 +6,8 @@ import chrono from 'chrono-node';
 import { format } from '../util/format';
 import chalk from 'chalk';
 
-var cfg = []; // eslint-disable-line
-var fromDate = null; // eslint-disable-line
+let cfg = [];
+let fromDate = null;
 
 const config = new Yam('fido', {
   primary: require('user-home'),
@@ -46,7 +46,9 @@ const argv = require('yargs')
   })
   .option('l', {
     alias: 'last',
-    describe: 'Get the natural language relative date from the config file that represents the start time of the last podcast episode. The value should be under a top level key called last_episode_date. Example: Last Monday 5pm',
+    describe: 'Get the natural language relative date from the config file that ' +
+    'represents the start time of the last podcast episode. The value should be ' +
+    'under a top level key called last_episode_date. Example: Last Monday 5pm',
     type: 'boolean',
   })
   .version(() => {

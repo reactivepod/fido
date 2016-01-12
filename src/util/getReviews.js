@@ -21,7 +21,7 @@ function doGet(country, page, itemId) {
 
 function getByCountry(country, pageCount, itemId) {
   const requests = Array.from(
-    {length: pageCount},
+    { length: pageCount },
     (k, i) => doGet(country, i + 1, itemId)
   );
 

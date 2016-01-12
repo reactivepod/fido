@@ -2,7 +2,10 @@ import dateformat from 'dateformat';
 import chalk from 'chalk';
 
 function formatData(data) {
-  return `\n${data.store} / ${data.author} / ${data.title} / ${data.rating} / ${data.date}\n${data.content}\n`;
+  return `
+${data.store} / ${data.author} / ${data.title} / ${data.rating} / ${data.date}
+${data.content}
+`;
 }
 
 export function getContent(content) {
@@ -20,6 +23,16 @@ export function isNewer(fromDate) {
 
 export function transform(data, fromDate = null) {
   let reviews = [];
+  const mapFn = country => review => {
+    return {
+      country,
+      author: review.author,
+      title: review.title,
+      rating: review['im:rating'],
+      date: new Date(review.updated),
+      content: getContent(review.content)[0],
+    };
+  };
 
   for (const country of Object.keys(data)) {
     let temp;
@@ -30,16 +43,7 @@ export function transform(data, fromDate = null) {
       temp = data[country][0];
     }
 
-    temp = temp.map(review => {
-      return {
-        country,
-        author: review.author,
-        title: review.title,
-        rating: review['im:rating'],
-        date: new Date(review.updated),
-        content: getContent(review.content)[0],
-      };
-    });
+    temp = temp.map(mapFn(country));
 
     if (temp.length) {
       reviews = reviews.concat(temp);

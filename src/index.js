@@ -7,7 +7,7 @@ export default function fido(config, page = 1, fromDate = null) {
   const allPromises = config.reduce((all, cfg) => {
     all[cfg.podcastId] = Promise.all([
       getMetadata(cfg.podcastId),
-      getReviews(cfg.countries, page, cfg.podcastId)
+      getReviews(cfg.countries, page, cfg.podcastId),
     ]).then(result => {
       const [meta, review] = result;
 

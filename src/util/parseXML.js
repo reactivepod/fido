@@ -8,8 +8,8 @@ const parseOptions = {
 };
 
 export function getResult(result) {
-  const reviews = (result && result.feed && result.feed.entry && Array.isArray(result.feed.entry)) ? result.feed.entry.slice(1) : [];
-  return reviews;
+  const isEntry = result && result.feed && result.feed.entry && Array.isArray(result.feed.entry);
+  return (isEntry) ? result.feed.entry.slice(1) : [];
 }
 
 export function getXMLresult(result) {
