@@ -5,6 +5,5 @@
     "no-console": 0,
     "no-loop-func": 0,
     "id-length": 0
-  },
-  "parser": "babel-eslint"
+  }
 }

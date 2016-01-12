@@ -1,5 +1,5 @@
 import test from 'ava';
-import 'babel/register';
+import 'babel-register';
 import { getResult, getXMLresult } from '../src/util/parseXML';
 import { format, transform } from '../src/util/format';
 import getReviews from '../src/util/getReviews';
