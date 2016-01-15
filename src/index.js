@@ -30,6 +30,7 @@ export default function fido(config, page = 1, fromDate = null) {
       };
     });
 
+
     return all;
   }, {});
 

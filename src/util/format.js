@@ -1,5 +1,6 @@
 import dateformat from 'dateformat';
 import chalk from 'chalk';
+import { btoa } from 'Base64';
 
 function formatData(data) {
   return `
@@ -28,6 +29,7 @@ export function transform(data, fromDate = null) {
       country,
       author: review.author,
       title: review.title,
+      key: btoa(review.author.name),
       rating: review['im:rating'],
       date: new Date(review.updated),
       content: getContent(review.content)[0],
@@ -35,12 +37,10 @@ export function transform(data, fromDate = null) {
   };
 
   for (const country of Object.keys(data)) {
-    let temp;
+    let temp = data[country].reduce((total, current) => [...total, ...current], []);
 
     if (fromDate !== null) {
-      temp = data[country][0].filter(isNewer(fromDate));
-    } else {
-      temp = data[country][0];
+      temp = temp.filter(isNewer(fromDate));
     }
 
     temp = temp.map(mapFn(country));
