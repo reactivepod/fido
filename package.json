@@ -35,7 +35,7 @@
     "user-home": "^2.0.0",
     "xml2js": "^0.4.16",
     "yam": "^0.0.18",
-    "yargs": "^3.31.0"
+    "yargs": "^4.1.0"
   },
   "devDependencies": {
     "ava": "^0.11.0",
