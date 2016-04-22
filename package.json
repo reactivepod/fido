@@ -44,7 +44,7 @@
     "babel-register": "^6.3.13",
     "cz-conventional-changelog": "^1.1.5",
     "eslint": "^2.0.0",
-    "eslint-config-airbnb": "^6.0.1",
+    "eslint-config-airbnb": "^8.0.0",
     "nock": "^8.0.0",
     "npm-run-all": "^1.4.0",
     "rimraf": "^2.5.0",
