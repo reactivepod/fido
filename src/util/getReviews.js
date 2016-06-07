@@ -20,10 +20,15 @@ function doGet(country, page, itemId) {
 
 
 function getByCountry(country, pageCount, itemId) {
+  if (Array.isArray(pageCount)) {
+    return pageCount.map(page => doGet(country, page, itemId));
+  }
+
   const requests = Array.from(
     { length: pageCount },
     (k, i) => doGet(country, i + 1, itemId)
   );
+
 
   return Promise.all(requests);
 }
