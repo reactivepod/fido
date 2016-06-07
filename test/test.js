@@ -16,17 +16,17 @@ test('parseXML/getResult', t => {
     },
   };
 
-  t.same(getResult(input), ['def', 'xyz']);
-  t.same(getResult({ feed: { entry: 'a' }}), []);
-  t.same(getResult(), []);
-  t.same(getResult({}), []);
+  t.deepEqual(getResult(input), ['def', 'xyz']);
+  t.deepEqual(getResult({ feed: { entry: 'a' } }), []);
+  t.deepEqual(getResult(), []);
+  t.deepEqual(getResult({}), []);
 });
 
 test('parseXML/getXMLresult', t => {
   const fixture = readFileSync('./fixture/getXMLresult.xml', { encoding: 'utf8' });
   const fixtureJson = readFileSync('./fixture/getXMLresult.json', { encoding: 'utf8' });
   return getXMLresult(fixture).then(result => {
-    t.same(result, JSON.parse(fixtureJson));
+    t.deepEqual(result, JSON.parse(fixtureJson));
   });
 });
 
@@ -42,10 +42,10 @@ test('getReviews', t => {
   const reactive = config.podcasts[0];
 
   return getReviews(reactive.countries, 1, reactive.podcastId).then(result => {
-    t.same(Object.keys(result), ['us', 'de']);
-    t.same(result.de, [[]]);
-    t.ok(result.us);
-    t.same(scope.isDone(), true);
+    t.deepEqual(Object.keys(result), ['us', 'de']);
+    t.deepEqual(result.de, [[]]);
+    t.truthy(result.us);
+    t.deepEqual(scope.isDone(), true);
   });
 });
 
@@ -54,5 +54,5 @@ test('format', t => {
   const output = stripColor(format(transform(data)));
   const fixture = readFileSync('./fixture/format.txt', { encoding: 'utf8' });
 
-  t.same(output, fixture);
+  t.deepEqual(output, fixture);
 });
