@@ -1,6 +1,5 @@
 import dateformat from 'dateformat';
 import chalk from 'chalk';
-import { btoa } from 'Base64';
 import uniqueBy from 'lodash.uniqby';
 
 function formatData(data) {
@@ -29,7 +28,7 @@ export function transform(data, fromDate = null) {
     country,
     author: review.author,
     title: review.title,
-    key: btoa(review.author.name),
+    key: `${review.author.name}-${review.author.uri.match(/\d+/)[0]}`,
     rating: review['im:rating'],
     date: new Date(review.updated),
     content: getContent(review.content)[0],
