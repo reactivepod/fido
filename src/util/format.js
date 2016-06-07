@@ -1,6 +1,7 @@
 import dateformat from 'dateformat';
 import chalk from 'chalk';
 import { btoa } from 'Base64';
+import uniqueBy from 'lodash.uniqby';
 
 function formatData(data) {
   return `
@@ -24,17 +25,15 @@ export function isNewer(fromDate) {
 
 export function transform(data, fromDate = null) {
   let reviews = [];
-  const mapFn = country => review => {
-    return {
-      country,
-      author: review.author,
-      title: review.title,
-      key: btoa(review.author.name),
-      rating: review['im:rating'],
-      date: new Date(review.updated),
-      content: getContent(review.content)[0],
-    };
-  };
+  const mapFn = country => review => ({
+    country,
+    author: review.author,
+    title: review.title,
+    key: btoa(review.author.name),
+    rating: review['im:rating'],
+    date: new Date(review.updated),
+    content: getContent(review.content)[0],
+  });
 
   for (const country of Object.keys(data)) {
     let temp = data[country].reduce((total, current) => [...total, ...current], []);
@@ -43,7 +42,7 @@ export function transform(data, fromDate = null) {
       temp = temp.filter(isNewer(fromDate));
     }
 
-    temp = temp.map(mapFn(country));
+    temp = uniqueBy(temp.map(mapFn(country)), 'key');
 
     if (temp.length) {
       reviews = reviews.concat(temp);
