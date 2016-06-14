@@ -25,7 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "Base64": "^0.3.0",
+    "Base64": "^1.0.0",
     "chalk": "^1.1.1",
     "chrono-node": "^1.0.8",
     "dateformat": "^1.0.11",
