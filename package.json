@@ -35,7 +35,7 @@
     "promise-props": "^1.0.0",
     "user-home": "^2.0.0",
     "xml2js": "^0.4.16",
-    "yam": "^0.0.19",
+    "yam": "^0.0.21",
     "yargs": "^4.1.0"
   },
   "devDependencies": {
