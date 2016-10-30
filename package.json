@@ -27,7 +27,7 @@
   "dependencies": {
     "Base64": "^0.3.0",
     "chalk": "^1.1.1",
-    "chrono-node": "^1.0.8",
+    "chrono-node": "^1.2.5",
     "dateformat": "^1.0.11",
     "isomorphic-fetch": "^2.2.0",
     "lodash.uniqby": "^4.5.0",
