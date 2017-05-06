@@ -52,7 +52,7 @@
     "nock": "^8.0.0",
     "npm-run-all": "^2.1.1",
     "rimraf": "^2.5.0",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^6.3.6"
   },
   "engines": {
     "node": ">=4.2"
