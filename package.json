@@ -31,7 +31,7 @@
     "dateformat": "^1.0.11",
     "isomorphic-fetch": "^2.2.0",
     "lodash.uniqby": "^4.5.0",
-    "pify": "^2.3.0",
+    "pify": "^3.0.0",
     "promise-props": "^1.0.0",
     "user-home": "^2.0.0",
     "xml2js": "^0.4.16",
